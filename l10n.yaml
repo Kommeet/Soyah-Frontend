@@ -1,0 +1,9 @@
+arb-dir: lib/l10n  # This remains the same, specifying the directory for localization files.
+
+# Lines for English localization (assuming you already have an intl_en.arb file):
+template-arb-file: app_en.arb  # This can be kept for reference, but not strictly necessary.
+output-localization-file: app_localizations.dart
+# New lines for German localization:
+locale: de  # German locale code.
+arb-file: app_de.arb  # Name of the German ARB file.
+untranslated-messages-file: desiredFileName.txt

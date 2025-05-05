@@ -1,0 +1,15 @@
+fontify:
+  input_svg_dir: "assets/images/svg/"
+  output_font_file: "assets/fonts/sohyah_icons_font.otf"
+  
+  output_class_file: "lib/app/utils/sohyah_icons.dart"
+  class_name: "SohYahIcons"
+  indent: 4
+  package: sohyah_font_package
+
+  font_name: "SohYah Icons"
+  normalize: true
+  ignore_shapes: true
+
+  recursive: true
+  verbose: false
