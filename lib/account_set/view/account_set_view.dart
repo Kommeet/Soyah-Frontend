@@ -13,7 +13,7 @@ class AccountSetView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Get the profile picture URL from AuthenticationRepository
-    final String? profilePictureUrl = context.read<AuthenticationRepository>().getProfilePictureUrl();
+    String? profilePictureUrl = context.read<AuthenticationRepository>().getProfilePictureUrl();
 
     return Scaffold(
       appBar: GlobalAppBar(

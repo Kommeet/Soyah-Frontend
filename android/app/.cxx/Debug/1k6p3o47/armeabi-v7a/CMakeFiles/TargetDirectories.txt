@@ -1,0 +1,2 @@
+D:/New folder for commit/frontend/android/app/.cxx/Debug/1k6p3o47/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/New folder for commit/frontend/android/app/.cxx/Debug/1k6p3o47/armeabi-v7a/CMakeFiles/rebuild_cache.dir

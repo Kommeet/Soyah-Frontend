@@ -118,6 +118,8 @@ class LogOutFailure implements Exception {}
 /// Repository which manages user authentication.
 /// {@endtemplate}
 class AuthenticationRepository {
+
+  String? _profilePictureUrl;
   /// {@macro authentication_repository}
   AuthenticationRepository({
     CacheClient? cache,
@@ -168,12 +170,24 @@ class AuthenticationRepository {
 
   /// Save profile picture URL to SharedPreferences
   Future<void> saveProfilePictureUrl(String url) async {
-    await prefs.setString(_profilePictureKey, url);
+
+    _profilePictureUrl = url;
+    // Optionally, save to SharedPreferences or Firestore for persistence
+    // Example with SharedPreferences:
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('profile_picture_url', url);
+
+
+
+
+
+    // await prefs.setString(_profilePictureKey, url);
   }
 
   /// Get profile picture URL from SharedPreferences
   String? getProfilePictureUrl() {
-    return prefs.getString(_profilePictureKey);
+    // return prefs.getString(_profilePictureKey);
+    return _profilePictureUrl;
   }
 
   /// Setter for verificationId

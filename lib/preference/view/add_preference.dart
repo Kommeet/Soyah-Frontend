@@ -192,7 +192,7 @@ Widget _buildSubmitButton(BuildContext context) {
             await cubit.uploadImages(cubit.state.galleryUrls);
 
             if (cubit.state.galleryUrls.length > 2) {
-              GoRouter.of(context).push('/add_profile');
+              GoRouter.of(context).push('/account_set');
             } else {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(

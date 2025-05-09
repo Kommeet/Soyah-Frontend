@@ -110,7 +110,7 @@ Future<void> saveFaceProfile(List<String> galleryUrls, List<FaceData> faceDataLi
         const SnackBar(content: Text('Profile images saved successfully')),
       );
       GoRouter.of(context).push(
-  '/account_set',
+  '/add_preference',
   extra: {"phoneNumber": sanitizedPhone},
 );
 

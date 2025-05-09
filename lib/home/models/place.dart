@@ -25,14 +25,14 @@ class Place extends Equatable {
   final double distance;
   final double lat;
   final double lng;
-  final double rating;
+  double rating;
   final int usersCheckedIn;
-  final String placeId; // <-- Added this field
+  final String placeId; 
   final String? photoReference;
-  final bool? isOpen; // New field for open status
-  final String? closingTime;
+  bool? isOpen;
+  String? closingTime;
 
-  const Place({
+  Place({
     required this.name,
     required this.type,
     required this.address,
@@ -54,4 +54,5 @@ class Place extends Equatable {
 
   double get latitude => lat;
   double get longitude => lng;
+
 }
